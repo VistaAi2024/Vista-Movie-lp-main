@@ -1,1404 +1,801 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<html lang="en" class="overflow-x-hidden">
+<head>
+  <meta charset="UTF-8" />
     <meta name="author" content="Softnio" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="images/vista-ai-favicon.png" />
-    <title>Vista Movie</title>
-    <link rel="stylesheet" href="assets/css/style-s4.css?v1.4.0" />
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-KWK48GDG');</script>
-    <!-- End Google Tag Manager -->
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-3CP8VDNE54"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
+  <link rel="shortcut icon" href="images/vista-ai-favicon.png" />
+  <title>Vista Movie</title>
+  <!-- Tailwind CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.2.7/dist/tailwind.min.css" rel="stylesheet" />
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="font-sans overflow-x-hidden">
 
-      gtag('config', 'G-3CP8VDNE54');
-    </script>
-    <!-- TikTok Pixel Code Start -->
-    <script>
-      !function (w, d, t) {
-        w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
-          var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
-        ;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
-
-
-        ttq.load('CS30VJRC77UF26CUFHK0');
-        ttq.page();
-      }(window, document, 'ttq');
-    </script>
-    <!-- TikTok Pixel Code End -->
-  </head>
-
-  <body class="nk-body" data-menu-collapse="lg">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KWK48GDG"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <div class="nk-app-root">
-      <header class="nk-header bg-darker is-dark has-mask overflow-hidden">
-        <div
-          class="nk-shape bg-shape-blur-pp ms-n30p mt-n20p start-50 translate-middle-x"
-        ></div>
-        <div
-          class="nk-shape bg-shape-blur-o ms-30p mb-n30p start-50 translate-middle-x"
-        ></div>
-        <div
-          class="nk-shape bg-shape-blur-p ms-n50p mt-40p start-50 translate-middle-y"
-        ></div>
-        <div class="nk-mask bg-pattern-noise-a"></div>
-        <div class="nk-mask bg-angle bg-angle-bottom bg-angle-white"></div>
-        <div
-          class="nk-header-main nk-menu-main is-transparent will-shrink on-dark ignore-mask"
-        >
-          <div class="container">
-            <div class="nk-header-wrap">
-              <div class="nk-header-logo">
-                <a href="index.html" class="logo-link">
-                  <div class="logo-wrap">
-                    <img
-                      class="logo-img logo-light"
-                      src="images/logo_vista-movia2@1x.png"
-                      srcset="images/logo_vista-movia2@1x.png 3x"
-                      alt="logo"
-                    />
-                  </div>
-                </a>
-              </div>
-              <!-- .nk-header-logo -->
-              <div class="nk-header-toggle">
-                <button class="btn btn-light btn-icon header-menu-toggle">
-                  <em class="icon ni ni-menu"></em>
-                </button>
-              </div>
-              <nav class="nk-header-menu nk-menu">
-                <ul class="nk-menu-list mx-auto">
-                  <li class="nk-menu-item has-dropdown">
-                    <a href="#" class="nk-menu-link">
-                      <span class="nk-menu-text">トップ</span>
-                    </a>
-                  </li>
-                  <li class="nk-menu-item">
-                    <a href="#ai-support" class="nk-menu-link">
-                      <span class="nk-menu-text">特徴</span>
-                    </a>
-                  </li>
-                  <li class="nk-menu-item">
-                    <a href="#how-to-use" class="nk-menu-link">
-                      <span class="nk-menu-text">使い方</span>
-                    </a>
-                  </li>
-                  <li class="nk-menu-item">
-                    <a href="#strong-point" class="nk-menu-link">
-                      <span class="nk-menu-text">強み</span>
-                    </a>
-                  </li>
-                  <!--                                  <li class="nk-menu-item">
-                                    <a href="#usecase" class="nk-menu-link">
-                                        <span class="nk-menu-text">ユースケース</span>
-                                    </a>
-                                </li> -->
-                  <li class="nk-menu-item">
-                    <a href="#plan" class="nk-menu-link">
-                      <span class="nk-menu-text">料金プラン</span>
-                    </a>
-                  </li>
-                  <li class="nk-menu-item">
-                    <a href="#reputation" class="nk-menu-link">
-                      <span class="nk-menu-text">評判</span>
-                    </a>
-                  </li>
-                  <li class="nk-menu-item">
-                    <a href="#faq" class="nk-menu-link">
-                      <span class="nk-menu-text">FAQ</span>
-                    </a>
-                  </li>
-                </ul>
-                <!-- .nk-menu-list -->
-
-                <ul class="nk-menu-buttons flex-lg-row-reverse">
-                  <li>
-                    <a
-                      href="https://movie.vista-ai.net/ja/signin"
-                      class="btn btn-primary"
-                      >無料で試してみる</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://movie.vista-ai.net/ja/signin"
-                      target="_blank"
-                      class="btn btn-outline-secondary"
-                      >ログイン</a
-                    >
-                  </li>
-                </ul>
-                <!-- .nk-menu-buttons -->
-              </nav>
-              <!-- .nk-header-menu -->
-            </div>
-            <!-- .nk-header-wrap -->
-          </div>
-          <!-- .container -->
+  <!-- Header -->
+  <header class="bg-white fixed w-full z-50">
+    <div class="container mx-auto max-w-screen-xl px-4 py-3">
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <div class="flex items-center space-x-2 ml-4">
+          <img src="images/logo_vista-movia2@1x.png" alt="VistaMovie ロゴ" class="h-8 md:h-10 w-auto"/>
         </div>
-        <!-- .nk-header-main -->
-        <div class="nk-hero pt-sm-5 pt-lg-5 pb-6 pb-sm-8 pb-lg-9">
-          <div class="container">
-            <div
-              class="row align-items-center justify-content-center justify-content-xl-between flex-lg-row-reverse g-gs"
-            >
-              <div class="col-sm-10 col-md-7 col-lg-6 col-xl-5">
-                <div class="nk-hero-gfx mt-n5 mb-n6 my-xl-0 ms-xl-n8 me-xl-n6">
-                  <img
-                    class="w-100"
-                    src="images/top-image-ja.png"
-                    style="margin-bottom: 40px; margin-top: 30px"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="col-md-11 col-lg-9 col-xl-6 col-xxl-6">
-                <div class="nk-hero-content text-center text-xl-start">
-                  <h1 class="title display-6 mb-3 mb-lg-4">
-                    <span>AIが大量に<br />動画広告を生成！</span>
-                  </h1>
-                  <p class="lead pe-xxl-6">
-                    全てAIにお任せ<br />低コスト、高効果、低工数で動画広告を生成
-                    <br />
-                  </p>
-                  <p class="mb-4 mb-lg-5">※ 現在β版提供中</p>
-                  <!--  -->
-                  <div
-                    class="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-xl-start pt-2"
-                  >
-                    <ul
-                      class="d-flex align-items-center has-gap g-1 text-warning"
-                    >
-                      <li class="d-inline-flex">
-                        <em class="icon fs-5 ni ni-star-fill"></em>
-                      </li>
-                      <li class="d-inline-flex">
-                        <em class="icon fs-5 ni ni-star-fill"></em>
-                      </li>
-                      <li class="d-inline-flex">
-                        <em class="icon fs-5 ni ni-star-fill"></em>
-                      </li>
-                      <li class="d-inline-flex">
-                        <em class="icon fs-5 ni ni-star-fill"></em>
-                      </li>
-                      <li class="d-inline-flex">
-                        <em class="icon fs-5 ni ni-star-fill"></em>
-                      </li>
-                    </ul>
-                    <!-- <span class="fs-5 ms-3">Based on 10,000+ reviews on</span> -->
-                    <span class="fs-5 ms-3">顧客満足度５つ星</span>
-                  </div>
-                  <!--                                 <ul class="d-flex flex-wrap justify-content-center justify-content-xl-start pt-3 has-gap gy-3">
-                                    <li class="px-3">
-                                        <img class="h-1-5rem" src="images/brands/72-b-tone-white.png" alt="">
-                                    </li>
-                                    <li class="px-3">
-                                        <img class="h-1-5rem" src="images/brands/72-c-tone-white.png" alt="">
-                                    </li>
-                                    <li class="px-3">
-                                        <img class="h-1-5rem" src="images/brands/72-d-tone-white.png" alt="">
-                                    </li>
-                                    <li class="px-3">
-                                        <img class="h-1-5rem" src="images/brands/72-e-tone-white.png" alt="">
-                                    </li>
-                                </ul> -->
-                </div>
-                <!-- .nk-hero-content -->
-              </div>
-              <!-- .col -->
-            </div>
-            <!-- .row -->
-          </div>
-          <!-- .container -->
+
+        <!-- Desktop Nav Menu - md以上で表示 -->
+        <div class="flex items-center">
+          <nav class="hidden md:block mr-4">
+            <ul class="flex items-center space-x-4">
+              <li>
+                <a href="#お悩み" class="block py-2 px-3 hover:bg-gray-100 rounded transition">お悩み</a>
+              </li>
+              <li>
+                <a href="#特徴" class="block py-2 px-3 hover:bg-gray-100 rounded transition">特徴</a>
+              </li>
+              <li>
+                <a href="#手順" class="block py-2 px-3 hover:bg-gray-100 rounded transition">手順</a>
+              </li>
+              <li>
+                <a href="#運用までの流れ" class="block py-2 px-3 hover:bg-gray-100 rounded transition">運用までの流れ</a>
+              </li>
+              <li>
+                <a href="#料金プラン" class="block py-2 px-3 hover:bg-gray-100 rounded transition">料金プラン</a>
+              </li>
+              <li>
+                <a href="#活用事例" class="block py-2 px-3 hover:bg-gray-100 rounded transition">活用事例</a>
+              </li>
+              <li>
+                <a href="#FAQ" class="block py-2 px-3 hover:bg-gray-100 rounded transition">FAQ</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- お問い合わせボタン - 常に表示 -->
+          <a href="https://nbp7dez6mte.typeform.com/to/pdrR4JT0" target="_blank" class="block text-center bg-yellow-300 font-bold py-2 px-6 rounded-full hover:bg-yellow-200 transition">
+            お問い合わせ ›
+          </a>
         </div>
-        <!-- .nk-hero -->
-      </header>
-      <!-- .nk-header -->
-      <main class="nk-pages">
-        <section class="section section-bottom-0 has-shape" id="ai-support">
-          <div
-            class="nk-shape bg-shape-blur-a mt-8 start-50 top-0 translate-middle-x"
-          ></div>
-          <div class="container">
-            <div class="section-head">
-              <div class="row justify-content-center text-center">
-                <div class="col-lg-9 col-xl-8 col-xxl-7">
-                  <h6 class="overline-title text-primary">AIが実行</h6>
-                  <h2 class="title">Vista Movieの6つの特徴</h2>
-                  <p class="lead">今までにない次世代動画広告生成サービスです</p>
-                </div>
-              </div>
-            </div>
-            <!-- .section-head -->
-            <div class="section-content">
-              <div class="row text-center g-gs">
-                <div class="col-md-6 col-xl-4">
-                  <div class="card rounded-4 border-0 shadow-tiny h-100">
-                    <div class="card-body">
-                      <div class="feature">
-                        <div class="feature-media">
-                          <div
-                            class="media media-middle media-xl text-bg-primary-soft rounded-4"
-                          >
-                            <em class="icon ni ni-video"></em>
-                          </div>
-                        </div>
-                        <div class="feature-text">
-                          <h4 class="title">大量に動画広告を作れる</h4>
-                          <p>
-                            AIが自動で動画広告を生成するので人的工数をかけず広告を大量生産できます
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- .col -->
-                <div class="col-md-6 col-xl-4">
-                  <div class="card rounded-4 border-0 shadow-tiny h-100">
-                    <div class="card-body">
-                      <div class="feature">
-                        <div class="feature-media">
-                          <div
-                            class="media media-middle media-xl text-bg-primary-soft rounded-4"
-                          >
-                            <em class="icon ni ni-bulb"></em>
-                          </div>
-                        </div>
-                        <div class="feature-text">
-                          <h4 class="title">流行りの広告を作れる</h4>
-                          <p>
-                            最新のトレンド広告の型を週単位で追加していくので常に流行りの広告を生成できます
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- .col -->
-                <div class="col-md-6 col-xl-4">
-                  <div class="card rounded-4 border-0 shadow-tiny h-100">
-                    <div class="card-body">
-                      <div class="feature">
-                        <div class="feature-media">
-                          <div
-                            class="media media-middle media-xl text-bg-primary-soft rounded-4"
-                          >
-                            <em class="icon ni ni-color-palette"></em>
-                          </div>
-                        </div>
-                        <div class="feature-text">
-                          <h4 class="title">多様な広告を作れる</h4>
-                          <p>
-                            様々なタイプの型を用意しているので新しい広告の試みを実施しやすいです
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- .col -->
-                <div class="col-md-6 col-xl-4">
-                  <div class="card rounded-4 border-0 shadow-tiny h-100">
-                    <div class="card-body">
-                      <div class="feature">
-                        <div class="feature-media">
-                          <div
-                            class="media media-middle media-xl text-bg-primary-soft rounded-4"
-                          >
-                            <em class="icon ni ni-growth"></em>
-                          </div>
-                        </div>
-                        <div class="feature-text">
-                          <h4 class="title">運用結果を反映できる</h4>
-                          <p>
-                            運用結果を次回広告生成に活かせるので運用すればするほど高効果が期待できます
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- .col -->
-                <div class="col-md-6 col-xl-4">
-                  <div class="card rounded-4 border-0 shadow-tiny h-100">
-                    <div class="card-body">
-                      <div class="feature">
-                        <div class="feature-media">
-                          <div
-                            class="media media-middle media-xl text-bg-primary-soft rounded-4"
-                          >
-                            <em class="icon ni ni-alarm-alt"></em>
-                          </div>
-                        </div>
-                        <div class="feature-text">
-                          <h4 class="title">納期待ち不要</h4>
-                          <p>
-                            AIが広告を生成するため従来のような納期待ちが発生せず広告を生成出来ます
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- .col -->
-                <div class="col-md-6 col-xl-4">
-                  <div class="card rounded-4 border-0 shadow-tiny h-100">
-                    <div class="card-body">
-                      <div class="feature">
-                        <div class="feature-media">
-                          <div
-                            class="media media-middle media-xl text-bg-primary-soft rounded-4"
-                          >
-                            <em class="icon ni ni-browser"></em>
-                          </div>
-                        </div>
-                        <div class="feature-text">
-                          <h4 class="title">使いやすい管理サイト</h4>
-                          <p>
-                            誰でも直感的に操作方法が分かるようなシンプルな設計になっています
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- .col -->
-              </div>
-              <!-- .row -->
-            </div>
-            <!-- .section-content -->
-          </div>
-          <!-- .container -->
-        </section>
-        <!-- .section -->
 
-        <section class="section section-bottom-0" id="how-to-use">
-          <div class="container">
-            <div class="section-head">
-              <div class="row justify-content-center text-center">
-                <div class="col-lg-8 col-xl-7 col-xxl-6">
-                  <h6 class="overline-title text-primary">使い方</h6>
-                  <h2 class="title">簡単3ステップで動画広告生成</h2>
-                </div>
-              </div>
-            </div>
-            <!-- .section-head -->
-            <div class="section-content">
-              <div
-                class="row g-gs justify-content-center flex-md-row-reverse align-items-center"
-              >
-                <div class="col-xl-4 col-lg-5 col-md-6">
-                  <div class="rounded-4 bg-info bg-opacity-50 p-5 pe-0">
-                    <div class="block-gfx me-n4">
-                      <img
-                        class="w-100 rounded-3 shadow-sm"
-                        src="images/gfx/process/a.png"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-4 col-lg-5 col-md-6">
-                  <div class="block-text">
-                    <div
-                      class="media media-middle text-bg-primary-soft rounded-pill fw-medium fs-5 mb-3"
-                    >
-                      01
-                    </div>
-                    <h3 class="title">
-                      利用したい素材があれば<br />管理サイトに登録
-                    </h3>
-                    <p>
-                      Vista
-                      Movieの管理サイトから広告制作に必要な商品の基本情報やロゴなど利用したい素材を登録します。※弊社の用意した素材だけでも生成できます。
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!-- .row -->
-            </div>
-            <!-- .section-content -->
-            <div class="sction-sap text-center py-3 d-none d-md-block">
-              <svg
-                class="h-3rem h-sm-5rem h-lg-7rem"
-                viewBox="0 0 444 112"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M442.989 1C443.49 18.4197 426.571 53.2592 354.892 53.2591C265.293 53.2591 126.139 53.2591 80.0875 53.2591C34.0366 53.2591 7.00663 85.784 0.999979 111"
-                  stroke="currentColor"
-                  stroke-dasharray="7 7"
-                />
-              </svg>
-            </div>
-            <!-- .sction-sap -->
-            <div class="h-3rem d-md-none"></div>
-            <div class="section-content">
-              <div class="row g-gs justify-content-center align-items-center">
-                <div class="col-xl-4 col-lg-5 col-md-6">
-                  <div class="rounded-4 bg-primary bg-opacity-40 p-5 ps-0">
-                    <div class="block-gfx ms-n4">
-                      <img
-                        class="w-100 rounded-3 shadow-sm"
-                        src="images/gfx/process/b.png"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-4 col-lg-5 col-md-6">
-                  <div class="block-text px-xxl-5">
-                    <div
-                      class="media media-middle text-bg-primary-soft rounded-pill fw-medium fs-5 mb-3"
-                    >
-                      02
-                    </div>
-                    <h3 class="title">広告を作りたい商品情報を入力</h3>
-                    <p>
-                      商品の利用効果や利用方法や競合優位性など商品情報を登録します。
-                    </p>
-                    <!--                                     <ul class="list gy-2">
-                                        <li><em class="icon ni ni-dot"></em><span>At vero eos et accusamus et iusto</span></li>
-                                        <li><em class="icon ni ni-dot"></em><span>At vero eos et accusamus et iusto</span></li>
-                                    </ul> -->
-                  </div>
-                </div>
-              </div>
-              <!-- .row -->
-            </div>
-            <!-- .section-content -->
-            <div class="sction-sap text-center py-3 d-none d-md-block">
-              <svg
-                class="h-3rem h-sm-5rem h-lg-7rem"
-                viewBox="0 0 444 114"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1.01068 1C0.510125 18.7364 17.4289 54.2093 89.1082 54.2093C178.707 54.2093 317.861 54.2093 363.912 54.2093C409.963 54.2093 436.993 87.3256 443 113"
-                  stroke="currentColor"
-                  stroke-dasharray="7 7"
-                />
-              </svg>
-            </div>
-            <!-- .sction-sap -->
-            <div class="h-3rem d-md-none"></div>
-            <div class="section-content">
-              <div
-                class="row g-gs justify-content-center flex-md-row-reverse align-items-center"
-              >
-                <div class="col-xl-4 col-lg-5 col-md-6">
-                  <div class="rounded-4 bg-pink bg-opacity-30 p-5 pe-0">
-                    <div class="block-gfx me-n4">
-                      <img
-                        class="w-100 rounded-3 shadow-sm"
-                        src="images/gfx/process/c.png"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-4 col-lg-5 col-md-6">
-                  <div class="block-text">
-                    <div
-                      class="media media-middle text-bg-primary-soft rounded-pill fw-medium fs-5 mb-3"
-                    >
-                      03
-                    </div>
-                    <h3 class="title">「生成」ボタンをクリック</h3>
-                    <p>
-                      AIが条件に基づき様々なタイプの広告を生成します。そこから実際に利用したい広告を選んでもらい広告出稿して頂きます。
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!-- .row -->
-            </div>
-            <!-- .section-content -->
-          </div>
-          <!-- .container -->
-        </section>
-        <!-- .section -->
-
-        <section class="section section-lg section-bottom-0" id="strong-point">
-          <div class="container">
-            <div class="section-head">
-              <div class="row justify-content-center text-center">
-                <div class="col-lg-9 col-xl-8 col-xxl-7">
-                  <h6 class="overline-title text-primary">Vista Movieの強み</h6>
-                  <h2 class="title">Vista Movieの3つの強み</h2>
-                </div>
-              </div>
-            </div>
-            <!-- .section-head -->
-            <div class="section-content">
-              <div class="row g-gs justify-content-center">
-                <div class="col-sm-6 col-lg-4">
-                  <div class="feature">
-                    <div class="feature-image ms-n3">
-                      <img
-                        class="h-xl-16rem"
-                        src="images/gfx/process/a-alt.png"
-                        alt=""
-                      />
-                    </div>
-                    <div class="feature-text">
-                      <h4 class="title">利益向上</h4>
-                      <p class="fs-6">
-                        広告の打ち手の数が増え、その運用データを元に新しい広告を生成できるので広告効果が高まり売上が向上し、その結果利益が向上します。
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <!-- .col -->
-                <div class="col-sm-6 col-lg-4">
-                  <div class="feature">
-                    <div class="feature-image ms-n3">
-                      <img
-                        class="h-xl-16rem"
-                        src="images/gfx/process/b-alt.png"
-                        alt=""
-                      />
-                    </div>
-                    <div class="feature-text">
-                      <h4 class="title">工数＆コスト削減</h4>
-                      <p class="fs-6">
-                        AIが自動で高品質の広告を制作してくれるのでこれまで制作にかかってた社内リソースや外注費用を大幅に削減することが出来ます。
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <!-- .col -->
-                <div class="col-md-6 col-lg-4">
-                  <div class="feature">
-                    <div class="feature-image ms-n3">
-                      <img
-                        class="h-xl-16rem"
-                        src="images/gfx/process/c-alt.png"
-                        alt=""
-                      />
-                    </div>
-                    <div class="feature-text">
-                      <h4 class="title">属人性の低減</h4>
-                      <p class="fs-6">
-                        AIがデータに基づき広告を制作するので個人の能力に頼ることなく、高品質なクリエイティブを生み出すことが可能となります。退職等のリスクもありません。
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <!-- .col -->
-              </div>
-              <!-- .row -->
-            </div>
-            <!-- .section-content -->
-          </div>
-          <!-- .container -->
-        </section>
-        <!-- .section -->
-
-        <!--             <section class="section section-lg" id="usecase">
-                <div class="container">
-                    <div class="section-head">
-                        <div class="row justify-content-center text-center">
-                            <div class="col-lg-9 col-xl-8 col-xxl-6">
-                                <h6 class="overline-title text-primary">ユースケース</h6>
-                                <h2 class="title">多様なタイプの<br>最高品質の動画広告をAIが生成</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="section-content">
-                        <div class="overflow-hidden">
-                            <ul class="nav nav-tabs nav-tabs-stretch mb-5">
-                                <li class="w-100 w-sm-50 w-lg-auto">
-                                    <button class="nav-link w-100 w-lg-auto active" data-bs-toggle="tab" data-bs-target="#social-media-adds"><em class="icon ni ni-bulb"></em><span>施策考案</span></button>
-                                </li>
-                                <li class="w-100 w-sm-50 w-lg-auto">
-                                    <button class="nav-link w-100 w-lg-auto" data-bs-toggle="tab" data-bs-target="#website-copy-seo"><em class="icon ni ni-mail"></em><span>メールの作成</span></button>
-                                </li>
-                                <li class="w-100 w-sm-50 w-lg-auto">
-                                    <button class="nav-link w-100 w-lg-auto" data-bs-toggle="tab" data-bs-target="#blog-section-writing"><em class="icon ni ni-file-check"></em><span>契約書の確認</span></button>
-                                </li>
-                                <li class="w-100 w-sm-50 w-lg-auto">
-                                    <button class="nav-link w-100 w-lg-auto" data-bs-toggle="tab" data-bs-target="#ecommerce-copy"><em class="icon ni ni-thumbs-up"></em><span>コードレビュー</span></button>
-                                </li>
-                                <li class="w-100 w-sm-50 w-lg-auto">
-                                    <button class="nav-link w-100 w-lg-auto" data-bs-toggle="tab" data-bs-target="#magic-command"><em class="icon ni ni-list-check"></em><span>エクセル分析</span></button>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="tab-content p-5 card border-0 rounded-4 shadow-sm">
-                            <div class="tab-pane p-lg-3 fade show active" id="social-media-adds" tabindex="0">
-                                <div class="row g-gs flex-xl-row-reverse">
-                                    <div class="col-xl-6 col-lg-10">
-                                        <div class="block-gfx">
-                                            <img class="w-100 rounded-3" src="images/gfx/usecase/a.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <div class="block-text pe-xl-7">
-                                            <h3 class="mb-4">アイディアベースの施策素案をAIが詳細に具体化させて仕事が楽に</h3>
-                                            <p class="lead">会議などで出たアイディアベースの施策をAIに共有することでAIが具体的な施策を立案します。これによりTalk AIを利用しなかった場合と比較して施策を実際に実施するまでにかかる時間を大幅に短縮できます。</p>
-                                            <ul class="list gy-3">
-                                                <li>
-                                                    <em class="icon text-primary ni ni-check-circle-fill"></em>
-                                                    <span>あなたの会社情報を考慮</span>
-                                                </li>
-                                                <li>
-                                                    <em class="icon text-primary ni ni-check-circle-fill"></em>
-                                                    <span>手書きのメモやホワイトボードの写真から依頼可能</span>
-                                                </li>
-                                                <li>
-                                                    <em class="icon text-primary ni ni-check-circle-fill"></em>
-                                                    <span>AIからの質問に順番に答えていくだけで最高のアウトプットを生成</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane p-lg-3 fade" id="website-copy-seo" tabindex="0">
-                                <div class="row g-gs flex-xl-row-reverse">
-                                    <div class="col-xl-6 col-lg-10">
-                                        <div class="block-gfx">
-                                            <img class="w-100 rounded-3" src="images/gfx/usecase/b.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <div class="block-text pe-xl-7">
-                                            <h3 class="mb-4">メール画面のスクショを撮って返信イメージを伝えればAIが返信内容を用意</h3>
-                                            <p class="lead">メールの返信内容をAIが考えてくれます。Talk AIはiOSアプリも展開してるため移動中でも簡単にAIに指示を出せ、メール対応の時間を大幅に短縮が可能です。</p>
-                                            <ul class="list gy-3">
-                                                <li>
-                                                    <em class="icon text-primary ni ni-check-circle-fill"></em>
-                                                    <span>あなたの会社情報を考慮</span>
-                                                </li>
-                                                <li>
-                                                    <em class="icon text-primary ni ni-check-circle-fill"></em>
-                                                    <span>メール画面のスクリーンショットから依頼可能</span>
-                                                </li>
-                                                <li>
-                                                    <em class="icon text-primary ni ni-check-circle-fill"></em>
-                                                    <span>AIからの質問に順番に答えていくだけで最高のアウトプットを生成</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane p-lg-3 fade" id="blog-section-writing" tabindex="0">
-                                <div class="row g-gs flex-xl-row-reverse">
-                                    <div class="col-xl-6 col-lg-10">
-                                        <div class="block-gfx">
-                                            <img class="w-100 rounded-3" src="images/gfx/usecase/c.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <div class="block-text pe-xl-7">
-                                            <h3 class="mb-4">契約書のチェック(作成)もAIにお任せ<br>簡単依頼で問題発生のリスクを抑えます</h3>
-                                            <p class="lead">契約書を見ながら写真またはスクリーンショットを撮影しながら確認したいポイントを伝えることで手軽で質の高いリーガルチェックを行えます。</p>
-                                            <ul class="list gy-3">
-                                                <li>
-                                                    <em class="icon text-primary ni ni-check-circle-fill"></em>
-                                                    <span>あなたの会社情報を考慮</span>
-                                                </li>
-                                                <li>
-                                                    <em class="icon text-primary ni ni-check-circle-fill"></em>
-                                                    <span>写真やスクリーンショットからピンポイントで相談可能</span>
-                                                </li>
-                                                <li>
-                                                    <em class="icon text-primary ni ni-check-circle-fill"></em>
-                                                    <span>確認だけでなく契約書の作成も可能</span>
-                                                </li>
-                                            </ul>
-                                        </div>    
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane p-lg-3 fade" id="ecommerce-copy" tabindex="0">
-                                <div class="row g-gs flex-xl-row-reverse">
-                                    <div class="col-xl-6 col-lg-10">
-                                        <div class="block-gfx">
-                                            <img class="w-100 rounded-3" src="images/gfx/usecase/d.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <div class="block-text pe-xl-7">
-                                            <h3 class="mb-4">コードレビューもAIに依頼でき的確なフィードバックを実施します</h3>
-                                            <p class="lead">通常ではChatGPTでは送れなかったプログラミングコードもTalk AIを通して画像共有することで文字数の問題が発生せずAIから高品質のフィードバックを受けられます。</p>
-                                            <ul class="list gy-3">
-                                                <li>
-                                                    <em class="icon text-primary ni ni-check-circle-fill"></em>
-                                                    <span>あなたのサービス内容を考慮</span>
-                                                </li>
-                                                <li>
-                                                    <em class="icon text-primary ni ni-check-circle-fill"></em>
-                                                    <span>コードのスクリーンショットからピンポイントで依頼可能</span>
-                                                </li>
-                                                <li>
-                                                    <em class="icon text-primary ni ni-check-circle-fill"></em>
-                                                    <span>AIからの質問に順番に答えるだけで上質なコードレビューが可能</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane p-lg-3 fade" id="magic-command" tabindex="0">
-                                <div class="row g-gs flex-xl-row-reverse">
-                                    <div class="col-xl-6 col-lg-10">
-                                        <div class="block-gfx">
-                                            <img class="w-100 rounded-3" src="images/gfx/usecase/e.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <div class="block-text pe-xl-7">
-                                            <h3 class="mb-4">エクセル等表の分析もスクリーンショットを撮影してお手軽依頼</h3>
-                                            <p class="lead">ChatGPTは画像データが送れないですがTalk AIではスクリーンショット付きでタスクを依頼できるためエクセル等の分析も簡単にAIに依頼できます。</p>
-                                              <ul class="list gy-3">
-                                                <li>
-                                                    <em class="icon text-primary ni ni-check-circle-fill"></em>
-                                                    <span>あなたの事業内容を考慮</span>
-                                                </li>
-                                                <li>
-                                                    <em class="icon text-primary ni ni-check-circle-fill"></em>
-                                                    <span>スクリーンショットからピンポイントで依頼可能</span>
-                                                </li>
-                                                <li>
-                                                    <em class="icon text-primary ni ni-check-circle-fill"></em>
-                                                    <span>AIからの質問に順番に答えていくだけで上質な分析が可能</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-
-        <section
-          class="section section-lg section-bottom-0"
-          id="plan"
-          style="padding-top: 100px"
-        >
-          <div class="container">
-            <div class="section-head">
-              <div class="row justify-content-center text-center">
-                <div class="col-lg-9 col-xl-7 col-xxl-6">
-                  <h6 class="overline-title text-primary">料金プラン</h6>
-                  <h2 class="title">
-                    Vista Movieは<br />気軽に利用開始できます
-                  </h2>
-                </div>
-              </div>
-            </div>
-            <!-- .section-head -->
-            <div class="section-content">
-              <div class="row g-gs justify-content-center">
-                <!-- .col -->
-                <div class="col-lg-4 col-md-6">
-                  <div class="pricing pricing-featured bg-primary">
-                    <div class="pricing-body p-5">
-                      <div class="text-center">
-                        <h5 class="mb-3">ビジネスプラン</h5>
-                        <h3 class="h2 mb-4">
-                          ¥ 11,000
-                          <span class="caption-text text-muted">
-                            / 月額（税込み）</span
-                          >
-                        </h3>
-                      </div>
-                      <ul class="list gy-3 ps-2">
-                        <li>
-                          <em class="icon ni ni-check text-success"></em>
-                          <span>大量の広告動画生成 (100個 / 月)</span>
-                        </li>
-                        <li>
-                          <em class="icon ni ni-check text-success"></em>
-                          <span><strong>50+</strong> テンプレート利用可能</span>
-                        </li>
-                        <li>
-                          <em class="icon ni ni-check text-success"></em>
-                          <span>トレンド広告生成</span>
-                        </li>
-                        <li>
-                          <em class="icon ni ni-check text-success"></em>
-                          <span>動画素材使い放題</span>
-                        </li>
-                        <li>
-                          <em class="icon ni ni-check text-success"></em>
-                          <span>画像素材使い放題</span>
-                        </li>
-                      </ul>
-                      <div class="text-center">
-                        <a
-                          href="https://movie.vista-ai.net/ja/signin"
-                          target="_blank"
-                          class="btn btn-primary btn-block my-4 emphasize"
-                          >７日間無料キャンペーンで試す</a
-                        >
-                        <span class="caption-text text-muted">または</span>
-                        <a
-                          href="https://buy.stripe.com/cN23fl56k3uN4AUfZ1"
-                          target="_blank"
-                          class="underline"
-                          >有料プランに申し込む</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- .col -->
-                <!--                             <div class="col-lg-4 col-md-6">
-                                <div class="pricing">
-                                    <div class="pricing-body p-5">
-                                        <div class="text-center">
-                                            <h5 class="mb-3">Diamond</h5>
-                                            <h3 class="h2 mb-4">$39 <span class="caption-text text-muted"> / month</span></h3>
-                                            <a href="#" class="btn btn-primary btn-soft btn-block">Start free trial today</a>
-                                        </div>
-                                        <ul class="list gy-3 pt-4 ps-2">
-                                            <li><em class="icon ni ni-check text-success"></em> <span><strong>50,000</strong> Monthly Word Limit</span></li>
-                                            <li><em class="icon ni ni-check text-success"></em> <span><strong>15+</strong> Templates</span></li>
-                                            <li><em class="icon ni ni-check text-success"></em> <span>70+ Languages</span></li>
-                                            <li><em class="icon ni ni-check text-success"></em> <span>Advance Editor Tool</span></li>
-                                            <li><em class="icon ni ni-check text-success"></em> <span>Regular Technical Support</span></li>
-                                            <li><em class="icon ni ni-check text-success"></em> <span>Unlimited Logins</span></li>
-                                            <li><em class="icon ni ni-check text-success"></em> <span>Newest Features</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div> --><!-- .col -->
-              </div>
-              <!-- .row -->
-            </div>
-            <!-- .section-content -->
-          </div>
-          <!-- .container -->
-        </section>
-        <!-- .section -->
-
-        <section class="section section-lg section-bottom-0" id="reputation">
-          <div class="container">
-            <div class="section-head">
-              <div class="row justify-content-center text-center">
-                <div class="col-lg-8 col-xl-7 col-xxl-6">
-                  <h6 class="overline-title text-primary">評判</h6>
-                  <h2 class="title">
-                    事前ユーザーテストで 4.9/5 の満足度評価を獲得しました
-                  </h2>
-                </div>
-              </div>
-            </div>
-            <!-- .section-head -->
-            <div class="section-content">
-              <div class="row g-gs justify-content-center align-items-center">
-                <div class="col-lg-4">
-                  <div class="card border-0 shadow-sm rounded-4">
-                    <div class="card-body">
-                      <ul class="list list-row gy-0 g-1 mb-3">
-                        <li>
-                          <em
-                            class="icon text-warning ni ni-star-fill fs-5"
-                          ></em>
-                        </li>
-                        <li>
-                          <em
-                            class="icon text-warning ni ni-star-fill fs-5"
-                          ></em>
-                        </li>
-                        <li>
-                          <em
-                            class="icon text-warning ni ni-star-fill fs-5"
-                          ></em>
-                        </li>
-                        <li>
-                          <em
-                            class="icon text-warning ni ni-star-fill fs-5"
-                          ></em>
-                        </li>
-                        <li>
-                          <em
-                            class="icon text-warning ni ni-star-fill fs-5"
-                          ></em>
-                        </li>
-                      </ul>
-                      <h4 class="title mb-3">
-                        今まで試せなかった打ち手を実施でき利益が向上しました！
-                      </h4>
-                      <p>
-                        元々色々な広告を試したかったんですが社内リソースの関係で実行できていませんでした。Vista
-                        Movieを利用することで沢山の打ち手を見つけ弊社のサービスの勝ち筋を見つけられ利益が向上しました。
-                      </p>
-                      <!--                                         <div class="d-flex pt-3">
-                                            <div class="media media-lg media-middle media-lg rounded-pill">
-                                                <img src="images/avatar/author/sm-a1.png" alt="">
-                                            </div>
-                                            <div class="media-info ms-3">
-                                                <h5 class="mb-1">坂本達夫</h5>
-                                                <div class="sub-text">Moroco Head of Business</div>
-                                            </div>
-                                        </div> -->
-                    </div>
-                  </div>
-                  <!-- .card -->
-                </div>
-                <!-- .col -->
-                <div class="col-lg-4">
-                  <div class="card border-0 shadow-sm rounded-4">
-                    <div class="card-body">
-                      <ul class="list list-row gy-0 g-1 mb-3">
-                        <li>
-                          <em
-                            class="icon text-warning ni ni-star-fill fs-5"
-                          ></em>
-                        </li>
-                        <li>
-                          <em
-                            class="icon text-warning ni ni-star-fill fs-5"
-                          ></em>
-                        </li>
-                        <li>
-                          <em
-                            class="icon text-warning ni ni-star-fill fs-5"
-                          ></em>
-                        </li>
-                        <li>
-                          <em
-                            class="icon text-warning ni ni-star-fill fs-5"
-                          ></em>
-                        </li>
-                        <li>
-                          <em
-                            class="icon text-warning ni ni-star-fill fs-5"
-                          ></em>
-                        </li>
-                      </ul>
-                      <h4 class="title mb-3">
-                        コスト削減と広告効果向上を同時に実現しました
-                      </h4>
-                      <p>
-                        以前から広告制作費の外注費用が高いと思っていたのですがVista
-                        Movieを利用し始めたことで外注費用を抑えた上で広告効果も向上し大満足しています。管理サイトもとても使いやすいです！
-                      </p>
-                      <!-- 
-                                        <div class="d-flex pt-3">
-                                            <div class="media media-lg media-middle media-lg rounded-pill">
-                                                <img src="images/avatar/author/sm-b2.png" alt="">
-                                            </div>
-                                            <div class="media-info ms-3">
-                                                <h5 class="mb-1">イセオサム</h5>
-                                                <div class="sub-text">PLAY,inc. 代表取締役</div>
-                                            </div>
-                                        </div> -->
-                    </div>
-                  </div>
-                  <!-- .card -->
-                </div>
-                <!-- .col -->
-                <div class="col-lg-4">
-                  <div class="card border-0 shadow-sm rounded-4">
-                    <div class="card-body">
-                      <ul class="list list-row gy-0 g-1 mb-3">
-                        <li>
-                          <em
-                            class="icon text-warning ni ni-star-fill fs-5"
-                          ></em>
-                        </li>
-                        <li>
-                          <em
-                            class="icon text-warning ni ni-star-fill fs-5"
-                          ></em>
-                        </li>
-                        <li>
-                          <em
-                            class="icon text-warning ni ni-star-fill fs-5"
-                          ></em>
-                        </li>
-                        <li>
-                          <em
-                            class="icon text-warning ni ni-star-fill fs-5"
-                          ></em>
-                        </li>
-                        <li>
-                          <em
-                            class="icon text-warning ni ni-star-fill fs-5"
-                          ></em>
-                        </li>
-                      </ul>
-                      <h4 class="title mb-3">
-                        属人性がなくなり担当者の退職の心配等もなくなりました
-                      </h4>
-                      <p>
-                        AIがデータに基づき自動で広告を制作してくれるため担当者の能力や経験に左右されない安定した広告運用が出来るようになり担当者の退職リスク等を考えなくて良くなり経営がしやすくなりました。
-                      </p>
-                      <!--                                         <div class="d-flex pt-3">
-                                            <div class="media media-lg media-middle media-lg rounded-pill">
-                                                <img src="images/avatar/author/sm-c2.png" alt="">
-                                            </div>
-                                            <div class="media-info ms-3">
-                                                <h5 class="mb-1">田坂学</h5>
-                                                <div class="sub-text">株式会社ザオリク 代表取締役</div>
-                                            </div>
-                                        </div> -->
-                    </div>
-                  </div>
-                  <!-- .card -->
-                </div>
-                <!-- .col -->
-              </div>
-              <!-- .row -->
-            </div>
-            <!-- .section-content -->
-          </div>
-          <!-- .container -->
-        </section>
-        <!-- .section -->
-
-        <section class="section section-lg" id="faq">
-          <div class="container">
-            <div class="section-head">
-              <div class="row justify-content-center text-center">
-                <div class="col-xl-8">
-                  <h6 class="overline-title text-primary">FAQ's</h6>
-                  <h2 class="title">よくある質問</h2>
-                </div>
-              </div>
-            </div>
-            <!-- .section-head -->
-            <div class="section-content">
-              <div class="row g-gs justify-content-center">
-                <div class="col-xl-9 col-xxl-8">
-                  <div
-                    class="accordion accordion-flush accordion-plus-minus accordion-icon-accent"
-                    id="faq-1"
-                  >
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button
-                          class="accordion-button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#faq-1-1"
-                        >
-                          Vista Movieはどのように始めればいいですか？
-                        </button>
-                      </h2>
-                      <div
-                        id="faq-1-1"
-                        class="accordion-collapse collapse show"
-                        data-bs-parent="#faq-1"
-                      >
-                        <div class="accordion-body">
-                          このLPの<a
-                            href="https://movie.vista-ai.net/ja/signin"
-                            target="_blank"
-                            >無料キャンペーン</a
-                          >を試してみるか<a
-                            href="https://buy.stripe.com/bIY8zFdCQfdv6J27su"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            >有料プラン</a
-                          >からお申込みください。<br />弊社でID/PASSWORDを発行してご連絡いたします。
-                        </div>
-                      </div>
-                    </div>
-                    <!-- .accordion-item -->
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button
-                          class="accordion-button collapsed"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#faq-1-2"
-                        >
-                          動作環境を教えて下さい
-                        </button>
-                      </h2>
-                      <div
-                        id="faq-1-2"
-                        class="accordion-collapse collapse"
-                        data-bs-parent="#faq-1"
-                      >
-                        <div class="accordion-body">
-                          Windows/MacOSのGoogle
-                          Chromeブラウザに対応しています。専用ソフトをインストール必要はございません。<br />
-                          その他ブラウザは動作環境テストを行っていないのでご了承ください。
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button
-                          class="accordion-button collapsed"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#faq-1-4"
-                        >
-                          どのような動画広告フォーマットに適応していますか？
-                        </button>
-                      </h2>
-                      <div
-                        id="faq-1-4"
-                        class="accordion-collapse collapse"
-                        data-bs-parent="#faq-1"
-                      >
-                        <div class="accordion-body">
-                          現在は1080×1920pxサイズの縦型の動画フォーマットに対応しています。<br />今後対応形式が拡充していく可能性はあります。<br />尺は長くて1分程度のものが生成されるようになっています。
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button
-                          class="accordion-button collapsed"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#faq-1-5"
-                        >
-                          どのような支払い方法に対応していますか？
-                        </button>
-                      </h2>
-                      <div
-                        id="faq-1-5"
-                        class="accordion-collapse collapse"
-                        data-bs-parent="#faq-1"
-                      >
-                        <div class="accordion-body">
-                          月払い形式のクレジットカード決済のみに現在は対応しています。<br />(対応ブランド)Visa、Mastercard、JCB、American
-                          Express、Discover Card、Diners Club
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button
-                          class="accordion-button collapsed"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#faq-1-6"
-                        >
-                          月あたりの動画生成数に上限はありますか？
-                        </button>
-                      </h2>
-                      <div
-                        id="faq-1-6"
-                        class="accordion-collapse collapse"
-                        data-bs-parent="#faq-1"
-                      >
-                        <div class="accordion-body">
-                          週や月あたりの動画生成数に制限はございません。
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button
-                          class="accordion-button collapsed"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#faq-1-7"
-                        >
-                          どのようなサポートがありますか？
-                        </button>
-                      </h2>
-                      <div
-                        id="faq-1-7"
-                        class="accordion-collapse collapse"
-                        data-bs-parent="#faq-1"
-                      >
-                        <div class="accordion-body">
-                          技術的な不具合等に対するテクニカルサポートがございます。広告に対する制作サポートサービスは現在行っておりません。
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- .accordion-item -->
-                    <!-- .accordion-item -->
-                  </div>
-                  <!-- .accordion -->
-                </div>
-                <!-- .col -->
-              </div>
-              <!-- .row -->
-            </div>
-            <!-- .section-content -->
-          </div>
-          <!-- .container -->
-        </section>
-        <!-- .section -->
-      </main>
-      <footer
-        class="nk-footer bg-darker is-dark has-mask has-shape pt-6 overflow-hidden"
-      >
-        <div
-          class="nk-mask bg-angle bg-angle-bottom bg-angle-flip bg-angle-white"
-        ></div>
-        <div
-          class="nk-shape bg-shape-blur-n ms-n30p mt-n20p start-50 translate-middle-x"
-        ></div>
-        <div
-          class="nk-shape bg-shape-blur-o ms-30p mb-n30p start-50 translate-middle-x"
-        ></div>
-        <div class="section section-sm bg-transparent">
-          <div class="container">
-            <div class="row g-5">
-              <div class="col-xl-4 col-lg-7 col-md-9 me-auto">
-                <div class="block-text pe-xxl-5">
-                  <h4 class="title mb-3">AIが大量に動画広告を生成！</h4>
-                  <p>
-                    Vista
-                    MovieはAIが動画広告を生成するサービスです。広告を生成したい商品の情報を簡単に入力するだけで誰でも最高品質の動画広告を生成できます。また最新のトレンドの広告の方も随時追加され多様な広告を生成できます。
-                  </p>
-                </div>
-              </div>
-              <!-- .col -->
-              <div class="col-xl">
-                <div class="row g-gs">
-                  <div class="col-lg-4 col-sm-4 col-6">
-                    <div class="wgs">
-                      <h6 class="wgs-title overline-title text-heading mb-4">
-                        サイト案内
-                      </h6>
-                      <ul class="list gy-2 list-link-base">
-                        <li><a class="link-base" href="#">トップ</a></li>
-                        <li>
-                          <a class="link-base" href="#ai-support">特徴</a>
-                        </li>
-                        <li>
-                          <a class="link-base" href="#how-to-use">使い方</a>
-                        </li>
-                        <li>
-                          <a class="link-base" href="#strong-point">強み</a>
-                        </li>
-                        <!-- <li><a class="link-base" href="#usecase">ユースケース</a></li> -->
-                        <li>
-                          <a class="link-base" href="#plan">料金プラン</a>
-                        </li>
-                        <li>
-                          <a class="link-base" href="#reputation">評判</a>
-                        </li>
-                        <li><a class="link-base" href="#faq">FAQ</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <!-- .col -->
-                  <div class="col-lg-4 col-sm-4 col-6">
-                    <div class="wgs">
-                      <h6 class="wgs-title overline-title text-heading mb-4">
-                        ヘルプサポート
-                      </h6>
-                      <ul class="list gy-2 list-link-base">
-                        <li>
-                          <a
-                            class="link-base"
-                            href="https://reactcom.notion.site/Vista Movie-fa064aad74b94c17923f16ba7fd276f7?pvs=4"
-                            target="_blank"
-                            >よくある質問</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <!-- .col -->
-                  <div class="col-lg-4 col-sm-4 col-6">
-                    <div class="wgs">
-                      <h6 class="wgs-title overline-title text-heading mb-4">
-                        その他
-                      </h6>
-                      <ul class="list gy-2 list-link-base">
-                        <li>
-                          <a
-                            class="link-base"
-                            href="https://nbp7dez6mte.typeform.com/to/pdrR4JT0"
-                            target="_blank"
-                            >お問い合わせ</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <!-- .col -->
-                </div>
-                <!-- .row -->
-              </div>
-              <!-- .col -->
-            </div>
-            <!-- .row -->
-          </div>
-          <!-- .container -->
-        </div>
-        <!-- .section -->
-        <div class="section section-0 bg-transparent">
-          <hr class="border-opacity-25 border-primary m-0" />
-          <div class="container">
-            <div class="py-4">
-              <div class="row">
-                <div class="col-md">
-                  <p class="mb-2 mb-md-0">
-                    Copyright &copy; 2024.
-                    <a
-                      href="https://corp.avatouch.net/"
-                      class="fw-bold text-base"
-                      >NDP Marketing Inc.</a
-                    >
-                  </p>
-                </div>
-                <!-- .col -->
-                <div class="col-md">
-                  <ul
-                    class="list list-row gx-4 justify-content-start justify-content-md-end"
-                  >
-                    <li>
-                      <a href="terms-of-use.html" class="link-base">利用規約</a>
-                    </li>
-                    <li>
-                      <a href="tokusho.html" class="link-base">特定商取引法</a>
-                    </li>
-                    <li>
-                      <a href="privacy-policy.html" class="link-base"
-                        >プライバシーポリシー</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="https://forms.gle/PWEZdtb848PZXhCJ9"
-                        class="link-base"
-                        >有料プランの解約はこちら</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-                <!-- .col -->
-              </div>
-              <!-- .row -->
-            </div>
-          </div>
-          <!-- .container -->
-        </div>
-        <!-- .section -->
-      </footer>
+        <!-- Mobile menu button - 削除（不要になったため） -->
+      </div>
     </div>
-    <script src="assets/js/bundle.js?v1.4.0"></script>
-    <script src="assets/js/scripts.js?v1.4.0"></script>
-  </body>
+  </header>
+  <div class="h-18 md:h-[72px]"></div>
+
+  <!-- FV Section -->
+  <section class="bg-[#f3f3f3] py-8 md:py-16">
+    <div class="container mx-auto max-w-screen-xl px-4">
+      <div class="flex flex-col md:flex-row justify-between items-start gap-8 md:gap-4">
+        <!-- 左側のテキストコンテンツ -->
+        <div class="w-full md:w-1/2">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 text-center md:text-left">
+            縦型広告動画の<br>
+            制作をもっと簡単に
+          </h1>
+          <p class="text-xl md:text-2xl lg:text-3xl font-bold mb-6 md:mb-8 text-center md:text-left">
+            縦型広告動画に特化した生成AIツール<br><br>
+            <span class="text-[#2287c2] text-3xl md:text-4xl lg:text-5xl">「Vista Movie」</span>
+          </p>
+        </div>
+
+        <!-- 右側の画像コンテンツ -->
+        <div class="w-full md:w-1/2 relative">
+          <div class="relative z-10">
+            <img src="/images/lp/main.png" alt="Vista Movie ダッシュボード" class="w-full rounded-2xl" />
+          </div>
+        </div>
+      </div>
+
+      <!-- ボタンを下部に配置 -->
+      <div class="flex flex-col sm:flex-row justify-center gap-4 mt-8 md:mt-12">
+        <a href="https://movie.vista-ai.net/ja/signin" target="_blank" class="inline-flex items-center justify-center border-2 border-[#2287c2] text-[#2287c2] font-bold py-3 px-8 md:px-12 rounded-full hover:bg-blue-50 transition w-full sm:w-auto sm:min-w-[240px]">
+          ログイン　›
+        </a>
+        <a href="https://movie.vista-ai.net/ja/signin" class="inline-flex items-center justify-center bg-[#2287c2] text-white font-bold py-3 px-8 md:px-12 rounded-full hover:opacity-90 transition w-full sm:w-auto sm:min-w-[240px]">
+          無料で試す　›
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- お悩みセクション -->
+  <section id="お悩み" class="bg-white py-8 md:py-12">
+    <div class="container mx-auto max-w-screen-lg px-4">
+      <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold text-center mb-8 md:mb-8">
+        こんなお悩みありませんか？
+      </h2>
+
+      <div class="flex flex-row items-start">
+        <!-- 左側の画像コンテンツ -->
+        <div class="w-1/4 md:w-1/3 flex justify-center md:-mr-12">
+          <img src="/images/lp/ilust.png" alt="worried person illustration" class="w-20 md:w-48" />
+        </div>
+
+        <!-- 右側の悩みリスト -->
+        <div class="w-3/4 md:w-2/3 space-y-2 md:space-y-6">
+          <div class="flex items-start gap-1 md:gap-3">
+            <div class="mt-1 flex-shrink-0">
+              <img src="/images/lp/check_icon.png" alt="check" class="w-5 h-5 md:w-7 md:h-7"/>
+            </div>
+            <p class="text-sm md:text-2xl lg:text-3xl font-bold decoration-dashed decoration-1 decoration-gray-300 underline underline-offset-8">
+              UGC素材の収集に<span class="text-[#d62860]">時間・コスト</span>が掛かる
+            </p>
+          </div>
+
+          <div class="flex items-start gap-1 md:gap-3">
+            <div class="mt-1 flex-shrink-0">
+              <img src="/images/lp/check_icon.png" alt="check" class="w-5 h-5 md:w-7 md:h-7"/>
+            </div>
+            <p class="text-sm md:text-2xl lg:text-3xl font-bold decoration-dashed decoration-1 decoration-gray-300 underline underline-offset-8">
+              動画作成の企画から編集までに<span class="text-[#d62860]">時間</span>がかかる
+            </p>
+          </div>
+
+          <div class="flex items-start gap-1 md:gap-3">
+            <div class="mt-1 flex-shrink-0">
+              <img src="/images/lp/check_icon.png" alt="check" class="w-5 h-5 md:w-7 md:h-7"/>
+            </div>
+            <p class="text-sm md:text-2xl lg:text-3xl font-bold decoration-dashed decoration-1 decoration-gray-300 underline underline-offset-8">
+              縦型広告動画の<span class="text-[#d62860]">外注費用</span>が高すぎる
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 解決セクション -->
+  <section class="py-16" style="background-color: #2287c2">
+    <div class="container mx-auto max-w-screen-lg px-4">
+      <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold text-center mb-10 text-white">全て解決できます！</h2>
+      <p class="text-white mb-10 text-xl">「VistaMovie」は業務を効率化します</p>
+
+      <div class="flex flex-col md:flex-row justify-between gap-8">
+        <!-- カード1 -->
+        <div class="bg-white rounded-3xl p-8 w-full md:w-1/3 flex flex-col items-center"> <!-- 角丸を大きく -->
+          <h3 class="font-bold text-2xl mb-8" style="color: #2287c2">直感的な動画生成</h3>
+          <div class="mb-8">
+            <img src="images/lp/01.png" alt="直感的な動画生成"/>
+          </div>
+          <p class="text-base text-center leading-relaxed">
+            商品情報を入力するだけで、AIが最適な素材を組み合わせて売れる動画広告を自動生成
+          </p>
+        </div>
+
+        <!-- カード2 -->
+        <div class="bg-white rounded-3xl p-8 w-full md:w-1/3 flex flex-col items-center">
+          <h3 class="font-bold text-2xl mb-8" style="color: #2287c2">スピーディーな制作</h3>
+          <div class="mb-8">
+            <img src="images/lp/02.png" alt="スピーディーな制作">
+          </div>
+          <p class="text-base text-center leading-relaxed">
+            制作時間を数日から数分に圧縮。複数パターンを同時生成し、スピーディーなA/Bテストを実現
+          </p>
+        </div>
+
+        <!-- カード3 -->
+        <div class="bg-white rounded-3xl p-8 w-full md:w-1/3 flex flex-col items-center">
+          <h3 class="font-bold text-2xl mb-8" style="color: #2287c2">コスト削減</h3>
+          <div class="mb-8">
+            <img src="images/lp/03.png" alt="コスト削減">
+          </div>
+          <p class="text-base text-center leading-relaxed">
+            面倒な素材探しと企画の工数を削減。制作コストを1本数万円から数百円まで大幅カット
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 特徴セクション -->
+  <section id="特徴" class="bg-white py-8 md:py-12 relative">
+    <!-- 背景のグラフ風デザイン -->
+    <div class="absolute inset-0 bg-[url('/images/lp/haikei.jpg')] bg-center"></div>
+
+    <div class="container mx-auto max-w-screen-lg px-4 relative">
+      <h2 class="text-center text-3xl md:text-5xl font-bold mb-6 md:mb-10">VistaMovieの特徴</h2>
+      <p class="text-base md:text-xl">
+        VistaMovie はAIを活用して<span class="text-[#d62860] font-bold">縦型動画広告の制作を最短5分</span>で実現。
+      </p>
+      <p class="text-base md:text-xl mb-8 md:mb-16">
+        売上高100億円のマーケティング会社が開発した即日で動画作成ができるプラットフォームです。
+      </p>
+
+      <!-- 円形レイアウト -->
+      <div class="relative mx-auto w-full max-w-[700px] aspect-[700/450]">
+        <!-- 中央のロゴ背景（白い背景） -->
+        <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-full w-[45%] aspect-square"></div>
+        <!-- 中央のロゴ -->
+        <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[30%]">
+          <img src="images/logo_vista-movia2@1x.png" alt="VistaMovie" class="w-full"/>
+        </div>
+
+        <!-- 円形に配置された特徴 -->
+        <div class="absolute w-full h-full">
+          <!-- 上部の円 -->
+          <div class="absolute left-1/2 -translate-x-1/2 top-[2%]">
+            <div class="bg-[#fcde72] rounded-full w-16 md:w-32 aspect-square flex items-center justify-center p-2">
+              <p class="text-center font-bold text-xs md:text-xl">大量の<br>動画広告<br>作成</p>
+            </div>
+          </div>
+
+          <!-- 右上の円 -->
+          <div class="absolute right-[15%] top-[15%]">
+            <div class="bg-[#fcde72] rounded-full w-16 md:w-32 aspect-square flex items-center justify-center p-2">
+              <p class="text-center font-bold text-xs md:text-xl">多様な広告<br>の実施</p>
+            </div>
+          </div>
+
+          <!-- 右下の円 -->
+          <div class="absolute right-[15%] bottom-[15%]">
+            <div class="bg-[#fcde72] rounded-full w-16 md:w-32 aspect-square flex items-center justify-center p-2">
+              <p class="text-center font-bold text-xs md:text-xl">納期待ち<br>不要</p>
+            </div>
+          </div>
+
+          <!-- 左上の円 -->
+          <div class="absolute left-[15%] top-[15%]">
+            <div class="bg-[#fcde72] rounded-full w-16 md:w-32 aspect-square flex items-center justify-center p-2">
+              <p class="text-center font-bold text-xs md:text-xl">流行りの<br>広告作成</p>
+            </div>
+          </div>
+
+          <!-- 左下の円 -->
+          <div class="absolute left-[15%] bottom-[15%]">
+            <div class="bg-[#fcde72] rounded-full w-16 md:w-32 aspect-square flex items-center justify-center p-2">
+              <p class="text-center font-bold text-xs md:text-xl">運用結果を<br>反映</p>
+            </div>
+          </div>
+
+          <!-- 下部の円 -->
+          <div class="absolute left-1/2 -translate-x-1/2 bottom-[2%]">
+            <div class="bg-[#fcde72] rounded-full w-16 md:w-32 aspect-square flex items-center justify-center p-2">
+              <p class="text-center font-bold text-xs md:text-xl">使いやすい<br>設計</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ボタン -->
+      <div class="flex flex-col md:flex-row justify-center gap-4 mt-8 md:mt-16">
+        <a href="https://movie.vista-ai.net/ja/signin" target="_blank" class="inline-flex items-center justify-center border-2 border-[#2287c2] text-[#2287c2] font-bold py-3 px-6 md:px-12 rounded-full hover:bg-blue-50 transition w-full md:w-auto md:min-w-[240px]">
+          ログイン ›
+        </a>
+        <a href="https://movie.vista-ai.net/ja/signin" class="inline-flex items-center justify-center bg-[#2287c2] text-white font-bold py-3 px-6 md:px-12 rounded-full hover:opacity-90 transition w-full md:w-auto md:min-w-[240px]">
+          無料で試す ›
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 手順セクション -->
+  <section id="手順" class="bg-[#eefeff] py-8 md:py-12">
+    <div class="container mx-auto px-4 md:px-20">
+      <h2 class="text-center text-2xl md:text-5xl font-bold mb-6 md:mb-10">動画広告生成の手順(使い方)</h2>
+
+      <div class="space-y-8 md:space-y-12">
+        <!-- STEP1 -->
+        <div class="bg-white rounded-lg overflow-hidden">
+          <div class="bg-[#2287c2] text-white p-4">
+            <h3 class="text-lg md:text-4xl font-bold text-center">
+              <span class="text-[#FFE4A7]">STEP1: </span>
+              <span class="block md:inline mt-2 md:mt-0">利用したい素材があれば管理サイトに登録</span>
+            </h3>
+          </div>
+          <div class="p-4 md:p-8 flex flex-col md:flex-row gap-6 md:gap-8">
+            <div class="w-full md:w-1/2">
+              <img src="/images/lp/step1.png" alt="STEP1" class="w-full"/>
+            </div>
+            <div class="w-full md:w-1/2">
+              <p class="text-base md:text-2xl leading-relaxed">
+                Vista Movieの管理サイトから広告制作に必要な商品の基本情報やロゴなど利用したい素材を登録します。
+              </p>
+              <p class="text-[#d62860] text-base md:text-2xl font-bold mt-4">
+                ※弊社の用意した素材だけでも生成できます。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP2 -->
+        <div class="bg-white rounded-lg overflow-hidden">
+          <div class="bg-[#2287c2] text-white p-4">
+            <h3 class="text-lg md:text-4xl font-bold text-center">
+              <span class="text-[#FFE4A7]">STEP2: </span>
+              <span class="block md:inline mt-2 md:mt-0">広告を作りたい商品情報を入力</span>
+            </h3>
+          </div>
+          <div class="p-4 md:p-8 flex flex-col md:flex-row gap-6 md:gap-8">
+            <div class="w-full md:w-1/2">
+              <img src="/images/lp/step2.png" alt="STEP2" class="w-full"/>
+            </div>
+            <div class="w-full md:w-1/2">
+              <p class="text-base md:text-2xl leading-relaxed">
+                商品の利用効果や利用方法や競合優位性など商品情報を登録します。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP3 -->
+        <div class="bg-white rounded-lg overflow-hidden">
+          <div class="bg-[#2287c2] text-white p-4">
+            <h3 class="text-lg md:text-4xl font-bold text-center">
+              <span class="text-[#FFE4A7]">STEP3: </span>
+              <span class="block md:inline mt-2 md:mt-0">「生成」ボタンをクリック</span>
+            </h3>
+          </div>
+          <div class="p-4 md:p-8 flex flex-col md:flex-row gap-6 md:gap-8">
+            <div class="w-full md:w-1/2">
+              <img src="/images/lp/step3.png" alt="STEP3" class="w-full"/>
+            </div>
+            <div class="w-full md:w-1/2">
+              <p class="text-base md:text-2xl leading-relaxed">
+                AIが条件に基づき様々なタイプの広告を生成します。そこから実際に利用したい広告を選んでもらい広告出稿して頂きます。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 運用までの流れセクション -->
+  <section id="運用までの流れ" class="bg-white py-8 md:py-12">
+    <div class="container mx-auto max-w-screen-lg px-4">
+      <h2 class="text-center text-3xl md:text-5xl font-bold mb-8 md:mb-16">運用までの流れ</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-5 mb-8 md:mb-16">
+        <!-- FLOW1 -->
+        <div class="text-center">
+          <p class="text-[#2287c2] text-xl md:text-2xl font-bold mb-2">- FLOW1 -</p>
+          <h3 class="text-xl md:text-2xl font-bold mb-6 md:mb-8">お客様情報ご登録</h3>
+          <img src="/images/lp/flow1.png" alt="お客様情報ご登録" class="w-24 md:w-32 h-24 md:h-32 mx-auto mb-6 md:mb-8"/>
+          <div class="text-left max-w-md mx-auto">
+            <p class="font-bold text-center text-lg md:text-xl mb-4">「必要事項を入力するだけで簡単登録」</p>
+            <div class="space-y-2">
+              <p class="font-medium text-left ml-8 md:ml-16">必須入力項目：</p>
+              <ul class="space-y-2 ml-8 md:ml-16 text-sm md:text-base">
+                <li class="flex items-center">
+                  <span class="mr-2">・</span>会社名
+                </li>
+                <li class="flex items-center">
+                  <span class="mr-2">・</span>反社チェック項目
+                </li>
+                <li class="flex items-center">
+                  <span class="mr-2">・</span>お支払い方法選択
+                  <span class="text-xs md:text-sm text-gray-600 ml-1">（※請求書払いは法人様限定）</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- FLOW2 -->
+        <div class="text-center">
+          <p class="text-[#2287c2] text-xl md:text-2xl font-bold mb-2">- FLOW2 -</p>
+          <h3 class="text-xl md:text-2xl font-bold mb-6 md:mb-8">アカウント発行</h3>
+          <img src="/images/lp/flow2.png" alt="アカウント発行" class="w-32 md:w-40 h-24 md:h-30 mx-auto mb-6 md:mb-8"/>
+          <div class="text-left max-w-md mx-auto">
+            <p class="font-bold text-center text-lg md:text-xl mb-4">ご登録後、以下の情報を<br>自動メールでお送りいたします</p>
+            <ul class="space-y-2 ml-8 md:ml-20 text-sm md:text-base">
+              <li class="flex items-center">
+                <span class="mr-2">・</span>ログインID・パスワード
+              </li>
+              <li class="flex items-center">
+                <span class="mr-2">・</span>サービス利用ガイド
+              </li>
+              <li class="flex items-center">
+                <span class="mr-2">・</span>7日間トライアルのご案内
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-5">
+        <!-- FLOW3 -->
+        <div class="text-center">
+          <p class="text-[#2287c2] text-xl md:text-2xl font-bold mb-2">- FLOW3 -</p>
+          <h3 class="text-xl md:text-2xl font-bold mb-6 md:mb-8">トライアル利用</h3>
+          <img src="/images/lp/flow3.png" alt="トライアル利用" class="w-32 md:w-40 h-24 md:h-30 mx-auto mb-6 md:mb-8"/>
+          <div class="text-left max-w-md mx-auto">
+            <p class="font-bold text-center text-lg md:text-xl mb-4">「7日間の無料お試し期間」</p>
+            <ul class="space-y-2 ml-8 md:ml-20 text-sm md:text-base">
+              <li class="flex items-center">
+                <span class="mr-2">・</span>トライアル終了1日前にメールでご案内
+              </li>
+              <li class="flex items-center">
+                <span class="mr-2">・</span>継続利用の場合はStripe決済リンクよりお手続き
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- FLOW4 -->
+        <div class="text-center">
+          <p class="text-[#2287c2] text-xl md:text-2xl font-bold mb-2">- FLOW4 -</p>
+          <h3 class="text-xl md:text-2xl font-bold mb-6 md:mb-8">契約完了・利用開始</h3>
+          <img src="/images/lp/flow4.png" alt="本契約" class="w-32 md:w-40 h-24 md:h-30 mx-auto mb-6 md:mb-8"/>
+          <div class="text-left max-w-md mx-auto">
+            <p class="font-bold text-center text-lg md:text-xl mb-4">本契約でのご利用開始</p>
+            <ul class="space-y-2 ml-8 md:ml-30 text-sm md:text-base">
+              <li class="flex items-center">
+                <span class="mr-2">・</span>Stripeでの決済確認後、ポイントを即時付与
+              </li>
+              <li class="flex items-center">
+                <span class="mr-2">・</span>本契約でのご利用開始
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 料金プランセクション -->
+  <section id="料金プラン" class="bg-[#eefeff] py-8 md:py-12">
+    <div class="container mx-auto px-4">
+      <h2 class="text-center text-3xl md:text-5xl font-bold mb-8 md:mb-16">料金プラン</h2>
+
+      <div class="max-w-2xl mx-auto bg-white rounded-xl border-[3px] md:border-5 border-[#2287c2] p-4 md:p-8">
+        <h3 class="text-lg md:text-xl font-bold text-center mb-4 md:mb-8">ビジネスプラン</h3>
+
+        <p class="text-center text-gray-600 text-sm md:text-base mb-6 md:mb-8">
+          Vista Movieは気軽に利用開始できます
+        </p>
+
+        <div class="text-center mb-6 md:mb-8">
+          <!-- 元の価格 -->
+          <div class="flex items-center justify-center gap-2 md:gap-3 mb-3 md:mb-4">
+            <div class="flex items-center justify-center bg-[#fcde72] text-base md:text-xl font-bold rounded-full w-14 md:w-16 h-14 md:h-16">月額</div>
+            <span class="line-through text-xl md:text-2xl font-bold">49,800円</span>
+            <span class="line-through text-xl md:text-2xl font-bold">6ヶ月契約</span>
+          </div>
+
+          <!-- 下向き矢印 -->
+          <div class="w-0 h-0 border-l-6 md:border-l-8 border-r-6 md:border-r-8 border-t-6 md:border-t-8 border-gray-300 border-solid mx-auto mb-3 md:mb-4"></div>
+
+          <!-- 新価格 -->
+          <div class="flex items-center justify-center mb-8 md:mb-15">
+            <div class="flex items-baseline">
+              <div class="flex items-baseline text-2xl md:text-4xl font-bold text-gray-700">
+                <span>月</span>
+                <span>額</span>
+              </div>
+              <div class="flex items-baseline ml-2">
+                <span class="text-5xl md:text-7xl font-bold text-[#d62860]">10,000</span>
+                <div class="relative flex flex-col ml-1">
+                  <span class="text-[#d62860] font-bold text-sm md:text-base absolute -top-4 md:-top-5">(税込)</span>
+                  <div class="flex items-center">
+                    <span class="text-2xl md:text-4xl font-bold">円</span>
+                    <span class="text-xs md:text-sm text-gray-500 ml-1 md:ml-2 mt-1 md:mt-2">1ユーザー（月額）</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <!-- ボタン -->
+          <div class="flex flex-col md:flex-row gap-3 md:gap-4 mb-6 md:mb-8">
+            <a href="#" class="bg-[#2287c2] text-white font-bold py-3 px-4 md:px-6 rounded-full hover:opacity-90 transition text-center text-sm md:text-base flex-1">
+              無料で試す ›
+            </a>
+            <a href="#" class="bg-[#fcde72] text-gray-800 font-bold text-center py-3 px-4 md:px-6 rounded-full hover:bg-yellow-200 transition-colors text-sm md:text-base flex-1">
+              有料プランに申込む ›
+            </a>
+          </div>
+        
+          <!-- チェックリスト -->
+          <ul class="space-y-2 md:space-y-3 text-left text-sm md:text-base">
+            <li class="flex items-start gap-2">
+              <svg class="w-4 md:w-5 h-4 md:h-5 text-pink-500 mt-1 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>毎月<span class="text-[#d62860]">100動画</span>までの生成となります。</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg class="w-4 md:w-5 h-4 md:h-5 text-pink-500 mt-1 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>金融系、不動産系をはじめとした全カテゴリの生成が可能となります。</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg class="w-4 md:w-5 h-4 md:h-5 text-pink-500 mt-1 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>期間限定で<span class="text-[#d62860]">トライアルアカウント</span>もご案内しております。</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 活用事例 -->
+  <section id="活用事例" class="bg-white py-12">
+    <h2 class="text-center text-3xl md:text-5xl font-bold mb-8 md:mb-16">活用事例</h2>
+
+    <div class="container mx-auto max-w-screen-lg px-4">
+      <!-- 事例1 -->
+      <div class="mb-16 md:mb-20">
+        <!-- タイトル: 事例1 -->
+        <div class="flex items-center gap-4 mb-6 justify-center md:justify-start md:mb-10 md:ml-[320px]">
+          <div class="bg-[#0088c5] text-white rounded-full w-[70px] h-[70px] md:w-[90px] md:h-[90px] flex items-center justify-center">
+            <div class="text-center">
+              <div class="font-bold text-lg md:text-xl">事例 <span class="text-3xl md:text-4xl">1</span></div>
+            </div>
+          </div>
+          <span class="text-xl md:text-2xl font-bold">アドアフィリエター</span>
+        </div>
+
+        <!-- メインコンテンツ -->
+        <div class="block md:relative">
+          <!-- 人物画像 (モバイル) -->
+          <div class="block mb-8 md:hidden">
+            <img src="images/lp/jirei_1.png" alt="事例1" class="rounded-full w-[200px] h-[200px] object-cover mx-auto"/>
+          </div>
+
+          <!-- 人物画像 (デスクトップ) -->
+          <div class="hidden md:block md:absolute md:left-40 md:top-0 md:w-[200px] md:h-[200px]">
+            <img src="images/lp/jirei_1.png" alt="事例1" class="rounded-full w-full h-full object-cover" />
+          </div>
+
+          <!-- 特徴リスト -->
+          <div class="md:ml-[400px]">
+            <ul class="space-y-6 md:space-y-8">
+              <li>
+                <div class="flex items-start gap-3">
+                  <div class="mt-1 flex-shrink-0">
+                    <img src="/images/lp/check_icon.png" alt="check" class="w-5 md:w-7 h-5 md:h-7"/>
+                  </div>
+                  <div>
+                    <div class="text-base md:text-lg font-bold">新規商材の<span class="text-[#d62860] font-bold">テストマーケをすぐに実施</span></div>
+                    <p class="text-gray-600 mt-2 text-sm">複数パターンの動画を同時に生成し、最適な広告を素早く発見。<br class="hidden md:block">
+                      効率的な訴求が見つかるまでのスピードが劇的に向上。</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="flex items-start gap-3">
+                  <div class="mt-1 flex-shrink-0">
+                    <img src="/images/lp/check_icon.png" alt="check" class="w-5 md:w-7 h-5 md:h-7"/>
+                  </div>
+                  <div>
+                    <div class="text-base md:text-lg font-bold"><span class="text-[#d62860]">素材探し不要</span>で低コストのテスト運用</div>
+                    <p class="text-gray-600 mt-2 text-sm">豊富なライブラリーから即座に素材を生成でき、テスト配信のハードルが大幅に低下。<br class="hidden md:block">
+                      より多くの検証機会を低コストで実現。</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="flex items-start gap-3">
+                  <div class="mt-1 flex-shrink-0">
+                    <img src="/images/lp/check_icon.png" alt="check" class="w-5 md:w-7 h-5 md:h-7"/>
+                  </div>
+                  <div>
+                    <div class="text-base md:text-lg font-bold">生成動画を自社の編集ツールで<span class="text-[#d62860]">簡単カスタマイズ</span></div>
+                    <p class="text-gray-600 mt-2 text-sm">テンプレートから生成した動画を、普段使用している編集ソフトで自由に加工可能。<br class="hidden md:block">
+                      細かな調整から大胆な変更まで、柔軟に編集で理想の動画に。</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 事例2 -->
+      <div class="mb-16 md:mb-20">
+        <!-- タイトル: 事例2 -->
+        <div class="flex items-center gap-4 mb-6 justify-center md:justify-start md:mb-10 md:ml-[320px]">
+          <div class="bg-[#0088c5] text-white rounded-full w-[70px] h-[70px] md:w-[90px] md:h-[90px] flex items-center justify-center">
+            <div class="text-center">
+              <div class="font-bold text-lg md:text-xl">事例 <span class="text-3xl md:text-4xl">2</span></div>
+            </div>
+          </div>
+          <span class="text-xl md:text-2xl font-bold">広告代理店</span>
+        </div>
+
+        <!-- メインコンテンツ -->
+        <div class="block md:relative">
+          <!-- 人物画像 (モバイル) -->
+          <div class="block mb-8 md:hidden">
+            <img src="images/lp/jirei_2.png" alt="事例2" class="rounded-full w-[200px] h-[200px] object-cover mx-auto"/>
+          </div>
+
+          <!-- 人物画像 (デスクトップ) -->
+          <div class="hidden md:block md:absolute md:left-40 md:top-0 md:w-[200px] md:h-[200px]">
+            <img src="images/lp/jirei_2.png" alt="事例2" class="rounded-full w-full h-full object-cover" />
+          </div>
+
+          <!-- 特徴リスト -->
+          <div class="md:ml-[400px]">
+            <ul class="space-y-6 md:space-y-8">
+              <li>
+                <div class="flex items-start gap-3">
+                  <div class="mt-1 flex-shrink-0">
+                    <img src="/images/lp/check_icon.png" alt="check" class="w-5 md:w-7 h-5 md:h-7"/>
+                  </div>
+                  <div>
+                    <div class="text-base md:text-lg font-bold">提案時の<span class="text-[#d62860] font-bold">即時モック作成</span></div>
+                    <p class="text-gray-600 mt-2 text-sm">クライアントとの打ち合わせ中でも、その場で動画モックを作成。<br class="hidden md:block">
+                      アイデアを具体的な形で即座に共有。</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="flex items-start gap-3">
+                  <div class="mt-1 flex-shrink-0">
+                    <img src="/images/lp/check_icon.png" alt="check" class="w-5 md:w-7 h-5 md:h-7"/>
+                  </div>
+                  <div>
+                    <div class="text-base md:text-lg font-bold"><span class="text-[#d62860]">スムーズな合意形成</span>の実現</div>
+                    <p class="text-gray-600 mt-2 text-sm">抽象的な説明から具体的な提案へ。動画によるビジュアル共有で<br class="hidden md:block">
+                      クラアントの理解と合意を促進。</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="flex items-start gap-3">
+                  <div class="mt-1 flex-shrink-0">
+                    <img src="/images/lp/check_icon.png" alt="check" class="w-5 md:w-7 h-5 md:h-7"/>
+                  </div>
+                  <div>
+                    <div class="text-base md:text-lg font-bold">内製化による<span class="text-[#d62860]">収益改善</span></div>
+                    <p class="text-gray-600 mt-2 text-sm">外注コストの削減と提案機会の増加で、案件あたりの収益性が向上。<br class="hidden md:block">
+                      より多くのテストや提案が可能に。</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 事例3 -->
+      <div class="mb-16 md:mb-20">
+        <!-- タイトル: 事例3 -->
+        <div class="flex items-center gap-4 mb-6 justify-center md:justify-start md:mb-10 md:ml-[320px]">
+          <div class="bg-[#0088c5] text-white rounded-full w-[70px] h-[70px] md:w-[90px] md:h-[90px] flex items-center justify-center">
+            <div class="text-center">
+              <div class="font-bold text-lg md:text-xl">事例 <span class="text-3xl md:text-4xl">3</span></div>
+            </div>
+          </div>
+          <span class="text-xl md:text-2xl font-bold">事業者</span>
+        </div>
+
+        <!-- メインコンテンツ -->
+        <div class="block md:relative">
+          <!-- 人物画像 (モバイル) -->
+          <div class="block mb-8 md:hidden">
+            <img src="images/lp/jirei_3.png" alt="事例3" class="rounded-full w-[200px] h-[200px] object-cover mx-auto"/>
+          </div>
+
+          <!-- 人物画像 (デスクトップ) -->
+          <div class="hidden md:block md:absolute md:left-40 md:top-0 md:w-[200px] md:h-[200px]">
+            <img src="images/lp/jirei_3.png" alt="事例3" class="rounded-full w-full h-full object-cover" />
+          </div>
+
+          <!-- 特徴リスト -->
+          <div class="md:ml-[400px]">
+            <ul class="space-y-6 md:space-y-8">
+              <li>
+                <div class="flex items-start gap-3">
+                  <div class="mt-1 flex-shrink-0">
+                    <img src="/images/lp/check_icon.png" alt="check" class="w-5 md:w-7 h-5 md:h-7"/>
+                  </div>
+                  <div>
+                    <div class="text-base md:text-lg font-bold">新規商材の<span class="text-[#d62860] font-bold">テストマーケをすぐに実施</span></div>
+                    <p class="text-gray-600 mt-2 text-sm">複数パターンの動画を同時に生成し、最適な広告を素早く発見。<br class="hidden md:block">
+                      効果的な訴求が見つかるまでのスピードが劇的に向上。</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="flex items-start gap-3">
+                  <div class="mt-1 flex-shrink-0">
+                    <img src="/images/lp/check_icon.png" alt="check" class="w-5 md:w-7 h-5 md:h-7"/>
+                  </div>
+                  <div>
+                    <div class="text-base md:text-lg font-bold">SNSマーケティングの<span class="text-[#d62860]">効果を最大化</span></div>
+                    <p class="text-gray-600 mt-2 text-sm">各SNSに最適化された動画コンテンツの生成により、効果測定から<br class="hidden md:block">
+                      改善までのサイクルを加速化。ターゲットに合わせた効果的な配信戦略の<br class="hidden md:block">
+                      展開が可能に。</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="flex items-start gap-3">
+                  <div class="mt-1 flex-shrink-0">
+                    <img src="/images/lp/check_icon.png" alt="check" class="w-5 md:w-7 h-5 md:h-7"/>
+                  </div>
+                  <div>
+                    <div class="text-base md:text-lg font-bold">社内の<span class="text-[#d62860]">意思決定プロセスを効率化</span></div>
+                    <p class="text-gray-600 mt-2 text-sm">具体的な動画での即座な共有により、関係者間のイメージ齟齬を解消し、<br class="hidden md:block">
+                      素早い合意形成を実現。施策展開までの時間を大幅に短縮可能に。</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FAQ -->
+  <section id="FAQ" class="bg-[#eefeff] py-8 md:py-12 relative">
+    <div class="container mx-auto max-w-screen-md px-4">
+      <h2 class="text-center text-3xl md:text-5xl font-bold mb-8 md:mb-16">よくあるご質問(FAQ)</h2>
+      <div class="space-y-8 md:space-y-10">
+        <div>
+          <h3 class="bg-white rounded-lg p-4 font-bold text-lg md:text-xl mb-6 md:mb-10"><span class="text-xl md:text-2xl text-[#2287c2]">Q. </span>編集スキルがなくても利用できますか？</h3>
+          <div class="ml-4 flex">
+            <div class="text-[#d62860] text-lg md:text-xl">A.</div>
+            <div class="text-xs md:text-sm leading-relaxed ml-2">
+              本サービスは、専門的なスキルがまったく不要で誰でも簡単に利用できます。商品名と説明文、あなたが訴求したい内容を入力するだけで、自動的に5パターンの縦型広告動画が生成されるので、動画制作の専門知識がなくても洗練された動画を作ることができます。
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 class="bg-white rounded-lg p-4 font-bold text-lg md:text-xl mb-6 md:mb-10"><span class="text-xl md:text-2xl text-[#2287c2]">Q. </span>どんな動画テンプレートがありますか？</h3>
+          <div class="ml-4 flex">
+            <div class="text-[#d62860] text-lg md:text-xl">A.</div>
+            <div class="text-xs md:text-sm leading-relaxed ml-2">
+              現在は金融、不動産、転職、一部のECなどの業界に特化したテンプレートをご用意しています。各業界の特性に合わせた動画フォーマットを提供しており、順次他のジャンルのテンプレートも拡充していく予定です。
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 class="bg-white rounded-lg p-4 font-bold text-lg md:text-xl mb-6 md:mb-10"><span class="text-xl md:text-2xl text-[#2287c2]">Q. </span>自分の素材をアップロードできますか？</h3>
+          <div class="ml-4 flex">
+            <div class="text-[#d62860] text-lg md:text-xl">A.</div>
+            <div class="text-xs md:text-sm leading-relaxed ml-2">
+              お客様のUGC動画をアップロードし、シーンを自由に差し替えることができ可能です。ただし、画像への動画挿入やロゴの上乗せなどの高度な編集機能は、別途お持ちの編集ソフトで対応いただく必要があります。
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 class="bg-white rounded-lg p-4 font-bold text-lg md:text-xl mb-6 md:mb-10"><span class="text-xl md:text-2xl text-[#2287c2]">Q. </span>編集スキルがなくても利用できますか？</h3>
+          <div class="ml-4 flex">
+            <div class="text-[#d62860] text-lg md:text-xl">A.</div>
+            <div class="text-xs md:text-sm leading-relaxed ml-2">
+              サービスには標準で編集機能が備わっており、文字、ナレーション音声、動画素材を簡単に編集できます。さらに凝った編集を希望される方は、テキストを非表示にしてダウンロードし、お手持ちの編集ソフトで自由にカスタマイズすることも可能です。
+            </div>
+          </div>
+        </div>
+
+        <!-- トップへ戻るボタン -->
+        <div class="text-right pt-12 md:pt-20">
+          <a href="#" class="inline-flex items-center justify-center bg-[#595757] rounded-lg p-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#3E3A39] text-white py-4">
+    <div class="container mx-auto max-w-screen-xl px-4">
+      <div class="text-center text-sm">
+        <div class="mb-2">
+          <a href="terms-of-use.html" class="hover:underline">利用規約</a>
+          <span class="mx-2">|</span>
+          <a href="tokusho.html" class="hover:underline">特定商取引法</a>
+          <span class="mx-2">|</span>
+          <a href="privacy-policy.html" class="hover:underline">プライバシーポリシー</a>
+          <span class="mx-2">|</span>
+          <a href="https://forms.gle/PWEZdtb848PZXhCJ9" class="hover:underline">有料プランの解約はこちら</a>
+        </div>
+        <p class="text-gray-300">Copyright © 2024, NDP Marketing Inc.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
 </html>
